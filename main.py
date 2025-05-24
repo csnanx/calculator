@@ -1,13 +1,13 @@
 import art
 
-def add(num_1, num_2):
-    return num_1 + num_2
-def subtract(num_1, num_2):
-    return num_1 - num_2
-def multiply(num_1, num_2):
-    return num_1 * num_2
-def divide(num_1, num_2):
-    return num_1 / num_2
+def add(n1, n2):
+    return n1 + n2
+def subtract(n1, n2):
+    return n1 - n2
+def multiply(n1, n2):
+    return n1 * n2
+def divide(n1, n2):
+    return n1 / n2
 
 operations = {
     "+": add,
