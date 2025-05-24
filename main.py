@@ -1,3 +1,5 @@
+import art
+
 def add(num_1, num_2):
     return num_1 + num_2
 def subtract(num_1, num_2):
@@ -16,6 +18,9 @@ def calculate(num_1, num_2):
         return multiply(num_1, num_2)
     elif operation == "/":
         return divide(num_1, num_2)
+
+print("Welcome to The Python Calculator!")
+print(art.calculator)
 
 should_continue = "n"
 
