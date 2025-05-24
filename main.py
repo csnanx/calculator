@@ -17,7 +17,17 @@ def calculate(num_1, num_2):
     elif operation == "/":
         return divide(num_1, num_2)
 
-num_1 = float(input("Enter the first number: "))
-operation = input("+\n-\n*\n/\nPick an operation: ")
-num_2 = float(input("Enter the second number:"))
-print(f"{num_1} {operation} {num_2} = {calculate(num_1, num_2)}")
+should_continue = "n"
+
+while should_continue == "n":
+    num_1 = float(input("Enter the first number: "))
+    operation = input("+\n-\n*\n/\nPick an operation: ")
+    num_2 = float(input("Enter the second number:"))
+    result = calculate(num_1, num_2)
+
+    print(f"{num_1} {operation} {num_2} = {result}")
+
+    should_continue = input(f"Type 'y' to continue calculating with {result}, or type 'n' to start a new calculation: ")
+
+    if should_continue == "y":
+        result = calculate(result, num_2)
